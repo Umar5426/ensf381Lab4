@@ -2,8 +2,8 @@
 =========================================================
 Name        : index.html
 Assignment  : Lab 4 Exercise C
-Author(s)   : Mahdi Ansari, William Arthur Philip Louis
-Submission  : May 21, 2030
+Author(s)   : Rayyan Ahmed, Muhammed Umar Khan
+Submission  : Feb 7, 2024
 Description : Flex Layouts.
 =========================================================
 -->
@@ -11,30 +11,8 @@ Description : Flex Layouts.
 <html>
 <head>
     <title>Responsive Webpage Layout</title>
-	<!--
-		Ensure that your HTML file includes the viewport meta tag in the <head> section. 
-		This tag is essential for responsive design as it tells the browser how to control the page's dimensions and scaling.
-	-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<style>	
-		/* Remove borders at the end, they have been add just for detecting positions of items*/	
-		div {
-			border: 1px dashed gray;	
-		}
-		.row{ 
-			border: 1px solid red;			
-		}
-		.large {
-			border: 1px solid blue;	
-		}
-		.medium {
-			border: 1px solid green;	
-		}
-		.small {
-			border: 1px solid yellow;	
-		}		
-	</style>
 
 	<style>
 		/* CSS for menu. You don't need to touch this part */
@@ -65,54 +43,85 @@ Description : Flex Layouts.
 			*/
 			box-sizing: border-box;
 		}
-        body { margin: 0; padding: 0; }
-        img { max-width: 100%; height: auto; }
+        body { 
+			margin: 0; 
+			padding: 0;
+			box-sizing: border-box;
+		 }
+        img { max-width: 100%; height: auto;box-sizing: border-box; }
         .container { 
 			/*I need some CSS codes.*/
+			box-sizing: border-box;
 		 }
-        .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; width: 100%;}
+        .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; width: 100%;box-sizing: border-box;}
 		.body { 
-			/*I need some CSS codes.*/
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: row;
 		}
         .main { 
 			padding: 15px; 
-			/*I need some CSS codes.*/
+			box-sizing: border-box;
+
 		}
         
         .news-item { padding: 10px; }
         .row { 
-			/*I need some CSS codes.*/
+			box-sizing: border-box;
 		}
         
 
-        @media screen and (min-width: 769px) {
-            .menu { width: 150px; }     
+        @media screen and (min-width: 768px) {
+            .menu {
+				width: 150px;
+			}     
 			.large { 
-				/*I need some CSS codes.*/
+				size: 100%;
 			}
 			.medium { 
-				/*I need some CSS codes.*/
+				size: 70%;
 			}
 			.small { 
-				/*I need some CSS codes.*/
-			 }       
+				size: 30%;
+			 }
+			.row{
+				display: flex;
+			}
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
 			.body { 
-				/*I need some CSS codes.*/
+				box-sizing: border-box;
+				display: flex;
+				flex-direction: column;
 			}
             .menu ul { 
-				/*I need some CSS codes.*/
+				box-sizing: border-box;
+				display: flex;
+				flex-direction: row;
 			 }            
-            /*I need some CSS codes.*/
+			.row{
+				display: flex;
+			}
         }
 
         @media screen and (max-width: 480px) {
             .news-item header h1 { font-size: 18px; }
+			.menu ul { 
+				/*I need some CSS codes.*/
+				box-sizing: border-box;
+				flex-direction: row;
+			 }            
             .medium, .small { 
 				/*I need some CSS codes.*/
+				box-sizing: border-box;
 			 }
+			.body{
+				flex-direction: column;
+			}
+			.row{
+				flex-direction: column;
+			}
         }
     </style>
 </head>
