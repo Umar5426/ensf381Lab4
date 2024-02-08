@@ -1,17 +1,17 @@
-#Project Overview
+# Project Overview
 * Exercise A: Create a repository
 * Exercise B: Responsive  Layout
 * Exercise C: Responsive  Layout With Flex
 * Exercise D: Editing a .md File
 
 
-##Team Members
+## Team Members
 | Name         |
 |--------------|
 | Rayyan Ahmed |
 | Umar Khan    |
 
-##Screenshots
+## Screenshots
 ### Exercise B
 ![Exercise B final output](./ExerciseB.gif)
 ### Exercise C
