@@ -1,9 +1,9 @@
 <!--
 =========================================================
-Name        : index.html
+Name        : responsive.html
 Assignment  : Lab 4 Exercise B
-Author(s)   : Mahdi Ansari, William Arthur Philip Louis
-Submission  : May 21, 2030
+Author(s)   : Rayyan Ahmed, Umar Khan
+Submission  : February  7, 2024
 Description : Responsive Layouts.
 =========================================================
 -->
@@ -18,69 +18,137 @@ Description : Responsive Layouts.
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- First, link the menu.css file here -->
+	<link rel="stylesheet" type="text/css" href="menu.css">
 
-	<style>	
-		/* Remove borders at the end, they have been add just for detecting positions of items*/	
-		div {
-			border: 1px dashed gray;	
-		}
-		.row{ 
-			border: 1px solid red;			
-		}
-		.large {
-			border: 1px solid blue;	
-		}
-		.medium {
-			border: 1px solid green;	
-		}
-		.small {
-			border: 1px solid yellow;	
-		}		
-	</style>
+
+
+
+
 
     <style>
-		body { margin: 0; padding: 0;}
-		img { max-width: 100%; height: auto; }
-        .container { width: 100%;}
-        .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; }        
-        .main { padding: 15px; margin-left: 150px;}		
-        .footer { position: fixed; bottom: 0; width: 100%;}
-        .news-item { padding: 10px; }
-		
-		.row { 
-			/*I need some CSS codes.*/		
-		}
 
-		.large, .medium, .small {
-			/*I need some CSS codes.*/
-		}
-		
-		.gap {
-			/*I need some CSS codes.*/
-		}
+	* {
+    box-sizing: border-box;
+	}
 
-		@media screen and (min-width: 769px) {			
-			.large { 
-				/*I need some CSS codes.*/
-			}
-			.medium { 
-				/*I need some CSS codes.*/
-			}
-			.small { 
-				/*I need some CSS codes.*/
-			 }
-		}
+	body {
+    	margin: 0;
+    	padding: 0;
+	}
 
-        @media screen and (max-width: 768px) {
-            /*I need some CSS codes.*/
-        }
+	img {
+    	max-width: 100%;
+    	height: auto;
+	}
 
-        @media screen and (max-width: 480px) {
-			/*I need some CSS codes.*/
-        }
+	.container {
+    	width: 100%;
+	}
 
-        
+	.header,.footer {
+    	background-color: #f2f2f2;
+    	text-align: center;
+    	padding: 10px;
+    	width: 100%;
+	}
+
+	.main {
+    	padding: 15px;
+	}
+
+	.footer {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+	}
+
+	.news-item {
+    	padding: 10px;
+	}
+
+
+	/*here begins changes*/
+	.row {
+    box-sizing: border-box;
+	}
+
+	/*sizes*/
+	@media screen and (min-width: 769px) {
+
+    	.large {
+        	width: 100%;
+    	}
+
+    	.medium {
+        	width: 70%; 
+        	float: left; 
+    	}
+
+		.small {
+        	width: 30%; 
+        	float: left; 
+    	}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+    	.medium, .small, .large {
+        	width: 100%; 
+    	}
+
+	}
+
+	@media screen and (min-width: 481px) and (max-width: 768px) {
+
+		.large {
+        	width: 100%;
+    	}
+
+    	.medium {
+        	width: 60%; 
+        	float: left; 
+    	}
+
+		.small {
+        	width: 40%; 
+        	float: left; 
+    	}
+
+	}  
+
+	/*menus*/
+	@media screen and (max-width: 768px) {
+    	.menu {
+        	width: 100%; 
+    	}
+
+    	.menu {
+        	display: block; 
+        	margin-bottom: 10px; 
+    	}
+	}
+
+
+	@media screen and (min-width: 769px) {
+    	.menu {
+        	padding-right: 10px; 
+    	}
+
+    	.main {
+        	margin-left: 170px; 
+    	}
+	}	
+
     </style>
+
+
+
+
+
+
+
+
 </head>
 <body>
     <div class="container">
